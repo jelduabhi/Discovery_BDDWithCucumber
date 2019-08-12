@@ -12,34 +12,35 @@ public class Helper extends HomePage{
 
 	public void navigateToSampleVedio() {
 		try {
-		CommonMethods.moveMouseToElement(showslink);
+		CommonMethods.moveMouseToElement(Shows());
 		CommonMethods.wait(3);
-		CommonMethods.clickOnElement(seelAlllink, "Clicking seelAlllink");
+		CommonMethods.clickOnElement(seeAll(), "Clicking seelAlllink");
 		CommonMethods.wait(10);
 		}catch(Exception e) {
 			System.out.println("Unable to perform action "+e.getMessage());
+			e.printStackTrace();
 		}
 	}
 	public void addToFavourite() {
 		try {
-		CommonMethods.clickOnElement(sampleVideo, "Clicking sampleVideo Element");
+		CommonMethods.clickOnElement(sampleVideo(), "Clicking sampleVideo Element");
 		CommonMethods.wait(5);
-		CommonMethods.highLight(firstVideo, "First Video");
-		CommonMethods.highLight(firstVideoText, "First Text");
-		CommonMethods.clickOnElement(firstVideo, "Clicking firstVideo Element");
+		CommonMethods.highLight(firstVideo(), "First Video");
+		CommonMethods.highLight(firstVideoText(), "First Text");
+		CommonMethods.clickOnElement(firstVideo(), "Clicking firstVideo Element");
 		CommonMethods.wait(2);
-		CommonMethods.highLight(secondVideo, "Second Video");
-		CommonMethods.highLight(secondVideoText, "Second Text");
-		CommonMethods.clickOnElement(secondVideo, "Clicking secondVideo Element");
+		CommonMethods.highLight(secondVideo(), "Second Video");
+		CommonMethods.highLight(secondVideoText(), "Second Text");
+		CommonMethods.clickOnElement(secondVideo(), "Clicking secondVideo Element");
 		}catch(Exception e) {
 			System.out.println("Unable to perform action "+e.getMessage());
 		}
 	}
 	public void validatefavourite() {
 		try {
-		CommonMethods.highLight(watchlater, "watchlater");
-		CommonMethods.highLight(validateFirstVideo, "validateFirstVideo");
-		CommonMethods.highLight(validateSecondVideo, "validateSecondVideo");
+		CommonMethods.highLight(watchlater(), "watchlater");
+		CommonMethods.highLight(validateFirstVideo(), "validateFirstVideo");
+		CommonMethods.highLight(validateSecondVideo(), "validateSecondVideo");
 		}catch(Exception e) {
 			System.out.println("Unable to valiate "+e.getMessage());
 		}

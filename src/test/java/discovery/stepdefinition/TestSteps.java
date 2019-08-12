@@ -22,9 +22,10 @@ public class TestSteps extends CommonMethods{
 		help.addToFavourite();
 	}
 
-	@Then("^i can able to see favourite in MyVidoes section$")
-	public void i_can_able_to_see_favourite_in_MyVidoes_section() throws Throwable {
+	@Then("^i can able to see favourite in My Vidoes section$")
+	public void i_can_able_to_see_favourite_in_My_Vidoes_section() throws Throwable {
 		navgateToNewURL(ProjectConfig.getPropertyValue("MyVideosUrl"));
 		help.validatefavourite();
 	}
+
 }
